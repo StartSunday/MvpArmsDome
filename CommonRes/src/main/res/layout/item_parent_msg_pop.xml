@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="@dimen/dp173"
+        android:layout_height="@dimen/dp107"
+        android:background="@drawable/shape_write_corners_fill_small"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dp21"
+        android:layout_height="@dimen/dp21"
+        android:layout_marginTop="@dimen/dp16"
+        android:src="@mipmap/prompt_icon"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_FF6A6A"
+        android:textSize="@dimen/sp6"
+        android:text="长时间未操作，10秒后将返回默认页面。"/>
+
+
+    <TextView
+        android:id="@+id/yes"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp6"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp17"
+        android:layout_marginBottom="@dimen/dp17"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@drawable/shape_blue_s"
+        android:text="我知道了" />
+    </LinearLayout>
+</LinearLayout>

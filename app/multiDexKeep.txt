@@ -1,0 +1,1 @@
+com.yice.card.app.GlobalConfiguration.class
