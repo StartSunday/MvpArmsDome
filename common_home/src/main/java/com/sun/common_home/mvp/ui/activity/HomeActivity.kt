@@ -16,6 +16,7 @@ import com.sun.common_home.mvp.presenter.HomePresenter
 
 import com.sun.common_home.R
 import com.sun.component.commonsdk.core.RouterHub
+import kotlinx.android.synthetic.main.activity_home.*
 
 
 /**
@@ -63,7 +64,9 @@ class HomeActivity : BaseActivity<HomePresenter>(), HomeContract.View {
 
 
     override fun initData(savedInstanceState: Bundle?) {
-
+        tv.setOnClickListener {
+            ARouter.getInstance().build(RouterHub.MYACTIVITY).navigation()
+        }
     }
 
 

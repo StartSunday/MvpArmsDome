@@ -13,6 +13,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/arms" />
             <option value="$PROJECT_DIR$/common_home" />
+            <option value="$PROJECT_DIR$/common_login" />
+            <option value="$PROJECT_DIR$/common_my" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

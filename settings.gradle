@@ -1,1 +1,1 @@
-include ':app', ':CommonSDK', ':CommonRes', ':arms', ':common_home'
+include ':app', ':CommonSDK', ':CommonRes', ':arms', ':common_home', ':common_my', ':common_login'

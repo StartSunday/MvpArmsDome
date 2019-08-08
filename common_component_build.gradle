@@ -82,6 +82,12 @@ android {
             }
         }
     }
+    //使用Kotlin实验特性
+    androidExtensions {
+        experimental = true
+    }
+
+
 }
 
 dependencies {

@@ -17,21 +17,16 @@ package com.sun.component.commonsdk.http;
 
 /**
  * ================================================
- * CommonSDK 的 Api 可以定义公用的关于 API 的相关常量, 比如说请求地址, 错误码等, 每个组件的 Api 可以定义组件自己的私有常量
+ * CommonSDK 的 HttpContans 可以定义公用的关于 API 的相关常量, 比如说请求地址, 错误码等, 每个组件的 HttpContans 可以定义组件自己的私有常量
  *
  * Created by JessYan on 30/03/2018 17:16
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
-public interface Api {
-    String APP_DOMAIN = "http://192.168.10.4:8999/ecc/";
-//    String APP_DOMAIN = "http://192.168.10.59:8999/ecc/";
-//    String APP_DOMAIN = "http://192.168.10.21:8999/ecc/";
-//    String APP_DOMAIN = "https://www.ycjdedu.com/ecc/";
-//    String APP_DOMAIN = "http://58.48.124.214:8999/ecc/";
-//    String APP_DOMAIN = "http://192.168.10.100:8999/ecc/";
-//    String APP_DOMAIN = "http://218.6.69.201:8999/ecc/";
+public interface HttpContans {
+    String APP_DOMAIN = "https://www.wanandroid.com/";
+
 
     String REQUEST_SUCCESS = "200";
 

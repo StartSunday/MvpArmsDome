@@ -27,7 +27,7 @@ import com.jess.arms.di.module.GlobalConfigModule;
 import com.jess.arms.http.log.RequestInterceptor;
 import com.jess.arms.integration.ConfigModule;
 import com.sun.component.commonsdk.BuildConfig;
-import com.sun.component.commonsdk.http.Api;
+import com.sun.component.commonsdk.http.HttpContans;
 import com.sun.component.commonsdk.http.HeaderInterceptor;
 import com.sun.component.commonsdk.http.SSLSocketClient;
 
@@ -58,7 +58,7 @@ public class GlobalConfiguration implements ConfigModule {
     public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
         if (!BuildConfig.LOG_DEBUG) //Release 时,让框架不再打印 Http 请求和响应的信息
             builder.printHttpLogLevel(RequestInterceptor.Level.NONE);
-        builder.baseurl(Api.APP_DOMAIN)
+        builder.baseurl(HttpContans.APP_DOMAIN)
                 .imageLoaderStrategy(new CommonGlideImageLoaderStrategy())
                 .globalHttpHandler(new GlobalHttpHandlerImpl(context))
                 .responseErrorListener(new ResponseErrorListenerImpl())

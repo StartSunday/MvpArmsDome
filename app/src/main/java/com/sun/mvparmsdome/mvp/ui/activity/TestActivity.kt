@@ -8,6 +8,7 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.jess.arms.base.BaseActivity
 import com.jess.arms.di.component.AppComponent
 import com.jess.arms.utils.ArmsUtils
+import com.sun.component.commonres.utils.FetConfig
 
 import com.sun.mvparmsdome.di.component.DaggerTestComponent
 import com.sun.mvparmsdome.di.module.TestModule
@@ -64,6 +65,9 @@ class TestActivity : BaseActivity<TestPresenter>(), TestContract.View {
 
 
     override fun initData(savedInstanceState: Bundle?) {
+        if (!FetConfig.getLogin()){
+            ARouter.getInstance().build(RouterHub.LOGINACTIVITY).navigation()
+        }
         tv.setOnClickListener {
 //            ArmsUtils.snackbarText("222222")
             ARouter.getInstance().build(RouterHub.HOMEACTIVITY).navigation()

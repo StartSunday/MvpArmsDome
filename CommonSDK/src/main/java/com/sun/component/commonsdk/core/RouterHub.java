@@ -44,8 +44,14 @@ public interface RouterHub {
      */
     String APP = "/app";//宿主 App 组件
     String HOME = "/home";//主页
+    String MY = "/my";//主页
+    String LOGIN = "/login";//主页
+
+    String LOGINACTIVITY = LOGIN+"/LoginActivity";
 
     String HOMEACTIVITY = HOME+"/HomeActivity";
 
     String TESTACTIVITY = APP+"/TestActivity";
+
+    String MYACTIVITY = MY+"/MyActivity";
 }

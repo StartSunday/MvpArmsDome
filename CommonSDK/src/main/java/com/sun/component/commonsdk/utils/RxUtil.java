@@ -20,9 +20,7 @@ import com.jess.arms.utils.RxLifecycleUtils;
 import com.sun.component.commonsdk.http.entity.ApiException;
 import com.sun.component.commonsdk.http.entity.DataResponse;
 
-import io.reactivex.Observable;
-import io.reactivex.ObservableSource;
-import io.reactivex.ObservableTransformer;
+import io.reactivex.*;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
@@ -103,6 +101,8 @@ public class RxUtil {
             }
         };
     }
+
+
 
     public static <T> ObservableTransformer<T, T> handleResult() {
         return upstream -> upstream.flatMap((Function<T, ObservableSource<T>>) t -> {
